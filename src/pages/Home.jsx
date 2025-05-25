@@ -25,7 +25,7 @@ function Home({ content }) {
                    to="/about"
                    className="mt-8 px-6 py-2 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg dark:bg-blue-500 dark:hover:bg-blue-600 transition duration-300 shadow hover:shadow-md uppercase"
              >
-                 Sužinoti daugiau
+                 More
                  <ArrowRight size={18} />
              </Link>
         </div>

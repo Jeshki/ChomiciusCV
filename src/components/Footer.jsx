@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Linkedin, Facebook } from 'lucide-react';
 
 function Footer({ content }) {
     const currentYear = new Date().getFullYear();
-    const facebookUrl = "https://www.facebook.com/dovile.miciukeviciute";
+    const facebookUrl = "https://www.facebook.com/deividas.chomicius";
     const linkedinUrl = content.linkedInUrl || "https://www.linkedin.com/in/deividaschomicius/";
 
     return (
