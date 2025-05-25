@@ -13,7 +13,7 @@ function About({ content }) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                 <div className="md:col-span-1 flex flex-col items-center md:sticky md:top-24">
                     <img
-                        src="../deivis.jpg"
+                        src="/deivis-5.jpg"
                         alt={content.name}
                         className="rounded-lg w-full max-w-xs md:max-w-full object-cover mb-6 shadow-lg"
                         onError={(e) => { e.target.onerror = null; e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23cccccc'/%3E%3Ctext x='50' y='50' font-size='10' fill='%23ffffff' text-anchor='middle' dy='.3em'%3ENo Image%3C/text%3E%3C/svg%3E"; }}
