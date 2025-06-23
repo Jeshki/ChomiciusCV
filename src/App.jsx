@@ -39,12 +39,18 @@ const content = {
         contactButton: 'Susisiekite',
         footerText: 'Visos teisės saugomos',
         notFound: '404 - Puslapis Nerastas',
+        moreButton: 'Daugiau',
         // Pradžios puslapis
         homeTitle: 'Sveiki atvykę!',
         homeContent: 'Esu kvalifikuotas odontologas, pasirengęs teikti profesionalias odontologijos paslaugas ir prisidėti prie jūsų šypsenos sveikatos.',
         // Apie mane puslapis
         aboutTitle: 'Apie Mane',
+        aboutMeIntroTitle: 'Apie mane',
         aboutMeIntro: 'Gyd. odontologas Deividas Chomičius GDC numeris: 320309. Odontologija man – ne tik profesija. Tai nuoširdus atsidavimas žmonėms, jų sveikatai ir pasitikėjimui savimi. Tikiu, kad kiekvienas pacientas nusipelno ne tik kokybiško gydymo, bet ir žmogiško požiūrio – dėmesio, pagarbos ir aiškaus bendravimo.Mano profesinis kelias grįstas nuolatiniu tobulėjimu ir tikslumu. Nuolatos gilinu žinias, dalyvauju praktiniuose kursuose ir seku naujausias odontologijos mokslo tendencijas – visa tai tam, kad galėčiau pasiūlyti šiuolaikiškus, saugius ir veiksmingus sprendimus kiekvienam pacientui. Nuo kasdienių profilaktinių patikrinimų iki sudėtingesnių procedūrų – kiekvienas gydymo etapas man yra svarbus.Pacientai dažnai prisipažįsta bijantys vizito pas odontologą. Mano tikslas – tai pakeisti. Kuriu aplinką, kurioje žmonės jaučiasi saugiai, suprasti ir gerbiami. Pas mane niekas nebūna skubinama ar teisiama – tik nuoširdus dialogas ir bendras darbas dėl geresnės sveikatos. Pasitikėjimas – tai, ką vertinu labiausiai. Todėl kiekvieną pacientą priimu ne tik kaip pacientą, bet kaip žmogų, kurio sveikata man rūpi. Kurkime sveikesnę ir keliančią pasitikėjimą šypseną – kartu.',
+        personalInfoTitle: 'Asmeninė Informacija',
+        dobLabel: 'Gimimo data:',
+        driversLicenseLabel: 'Vairuotojo pažymėjimas:',
+        nationalityLabel: 'Tautybė:',
         personalSkillsTitle: 'Asmeniniai Įgūdžiai',
         personalSkillsList: [ 'Dėmesys detalėms', 'Bendravimo įgūdžiai', 'Empatija ir užuojauta', 'Problemų sprendimas', 'Laiko valdymas', 'Gebėjimas prisitaikyti / keistis', 'Darbas komandoje' ],
         professionalInterestsTitle: 'Profesiniai Interesai',
@@ -120,11 +126,11 @@ const content = {
         ],
         articlesTitle: 'Rašyti Straipsniai ir Santraukos',
         articlesList: [
-            'Straipsnis. Safety and Potential Complications of Facial Wrinkle Correction with Dermal Fillers: A Systematic Literature Review',
-            'Straipsnis. Healing of Post-Extraction Alveolar Defects by Primary and Secondary Intention: A Systematic Literature Review',
-            'Abstraktas. One year evaluation of mandibular vertical augmentation: A comparative analysis between titanium meshes and resorbable membranes',
-            'Abstraktas. Conservative versus surgical treatment of pediatric mandibular condyle fractures',
-            'Abstraktas. Comparison of surgical techniques for extraction of impacted or retained mesiodens: A literature review'
+            'Straipsnis. Veido raukšlių korekcijos užpildais saugumas ir galimos komplikacijos: sisteminė literatūros apžvalga', // Išversta
+            'Straipsnis. Poekstrakcinių alveolinių defektų gijimas pirminiu ir antriniu būdu: sisteminė literatūros apžvalga', // Išversta
+            'Abstraktas. Apatinio žandikaulio vertikalios augmentacijos vienerių metų vertinimas: lyginamoji analizė tarp titano tinklelių ir resorbuojamųjų membranų', // Išversta
+            'Abstraktas. Konservatyvusis ir chirurginis vaikų apatinio žandikaulio sąnarinės ataugos lūžių gydymas', // Išversta
+            'Abstraktas. Impaktuotų ar retinuotų meziodensų šalinimo chirurginių metodų palyginimas: literatūros apžvalga' // Išversta
         ],
         referencesText: 'Rekomendacijos – Galima pagal pageidavimą.'
     },
@@ -149,12 +155,18 @@ const content = {
         contactButton: 'Contact Me',
         footerText: 'All rights reserved',
         notFound: '404 - Not Found',
+        moreButton: 'More',
         // Home Page
         homeTitle: 'Welcome!',
         homeContent: 'I am a qualified dentist, ready to provide professional dental services and contribute to your smile health.',
         // About Page
         aboutTitle: 'About Me',
+        aboutMeIntroTitle: 'Personal Summary',
         aboutMeIntro: "Dentist Deividas Chomičius, GDC number: 320309. For me, dentistry is not just a profession. It's a sincere dedication to people, their health, and their self-confidence. I believe that every patient deserves not only quality treatment but also a human approach – attention, respect, and clear communication. My professional path is based on continuous improvement and precision. I constantly deepen my knowledge, participate in practical courses, and follow the latest trends in dental science – all to offer modern, safe, and effective solutions to every patient. From routine prophylactic check-ups to more complex procedures – every stage of treatment is important to me. Patients often admit to being afraid of visiting the dentist. My goal is to change that. I create an environment where people feel safe, understood, and respected. With me, no one is rushed or judged – only sincere dialogue and collaborative work for better health. Trust is what I value most. Therefore, I treat every patient not just as a patient, but as a person whose health I care about. Let's create a healthier and more confident smile – together.",
+        personalInfoTitle: 'Personal Details',
+        dobLabel: 'DOB:',
+        driversLicenseLabel: 'Driving license:',
+        nationalityLabel: 'Nationality:',
         personalSkillsTitle: 'Personal Skills',
         personalSkillsList: [ 'Attention to detail', 'Communication skills', 'Empathy and Compassion', 'Problem-Solving', 'Time Management', 'Adaptability', 'Team Collaboration' ],
         professionalInterestsTitle: 'Areas of Interests',
@@ -172,14 +184,14 @@ const content = {
         experienceList: [
             { period: 'October 2024 - Present', title: 'Associate Dentist', company: 'UK Smiles (United Kingdom)' },
             { period: 'July 2024 - Present, July - August 2023, July - August 2022', title: 'Dispensing Optician', company: 'Taylor-West & Co. Opticians (United Kingdom)' },
-            { period: 'May - June 2024', title: 'Dental Assistant (additional practice)', company: 'Šypsenos akademija (Eng. Smile academy) (Lithuania)' },
-            { period: 'April - June 2024, December 2022 - January 2023', title: 'Dental Assistant (additional practice)', company: '"SB dentų klinika" (Eng. SB dental clinic) (Lithuania)' },
+            { period: 'May - June 2024', title: 'Dental Assistant (additional practice)', company: 'Smile academy (Lithuania)' },
+            { period: 'April - June 2024, December 2022 - January 2023', title: 'Dental Assistant (additional practice)', company: 'SB dental clinic (Lithuania)' },
             { period: 'February - March 2024', title: 'Dentist (internship)', company: 'Kaunas city clinic (Lithuania)' },
             { period: 'November 2023 - March 2024', title: 'Dentist (additional practice)', company: 'Lithuania University of Health Sciences Hospital, Oral Surgery department (Lithuania)' },
-            { period: 'November - December 2023', title: 'Dental Assistant (additional practice)', company: '"33 dantys" (Eng. 33 teeth) (Lithuania)' },
+            { period: 'November - December 2023', title: 'Dental Assistant (additional practice)', company: '33 teeth (Lithuania)' },
             { period: 'July - September 2021', title: 'Dispensing Optician', company: 'GlassesON Opticians (Lithuania)' },
-            { period: 'June - August 2020', title: 'Nurse assistant', company: 'Respublikinė Kauno Ligoninė (Eng. Kaunas Republic hospital, Lithuania)' },
-            { period: 'January - January 2020', title: 'Dental Assistant (additional practice)', company: '„Imperial Denta Group“ (Lithuania)' },
+            { period: 'June - August 2020', title: 'Nurse assistant', company: 'Kaunas Republic hospital (Lithuania)' },
+            { period: 'January - January 2020', title: 'Dental Assistant (additional practice)', company: 'Imperial Denta Group (Lithuania)' },
             { period: 'April - September 2019', title: 'Dispensing Optician', company: 'Whitby and Co. Opticians (United Kingdom)' },
             { period: 'December 2018 - May 2019 (6 months)', title: 'Dispensing Optician (Volunteer)', company: 'Vision Care for Homeless People Opticians (United Kingdom)' },
             { period: 'June 2015 - March 2019 (3 years 10 months)', title: 'Dispensing Optician', company: 'Specs of Kensington Opticians (United Kingdom)' },
@@ -199,7 +211,7 @@ const content = {
             'Observing and Assisting in Oral Surgery: Gain practical experience by observing surgeries, assisting with patient preparation, and understanding surgical procedures.',
             'Participating in Team Meetings: Engage in case discussions, treatment planning sessions, and team meetings to enhance understanding of interdisciplinary care.',
             'Documenting Patient Records: Accurately maintain and update patient records, including treatment notes, progress reports, and follow-up care instructions.',
-            'Enhancing Communication Skills: Practice effective communication with patients, colleagues, and supervisors to build rapport and facilitate smooth patient management.'
+            'Enhancing Communication Skills: Practice effective communication with patients, colleagues, and supervisors, to build rapport and facilitate smooth patient management.'
         ],
         dispensingOpticianDutiesTitle: 'Dispensing Optician Duties',
         dispensingOpticianDutiesList: [
@@ -229,7 +241,7 @@ const content = {
         ],
         articlesTitle: 'Written Articles and Abstracts',
         articlesList: [
-            'Article. Healing of Post-Extraction Alveolar Defects by Primary and Secondary Intention: A Systematic Literature Review',
+            'Article. Safety and Potential Complications of Facial Wrinkle Correction with Dermal Fillers: A Systematic Literature Review',
             'Abstract. One year evaluation of mandibular vertical augmentation: A comparative analysis between titanium meshes and resorbable membranes',
             'Abstract. Conservative versus surgical treatment of pediatric mandibular condyle fractures',
             'Abstract. Comparison of surgical techniques for extraction of impacted or retained mesiodens: A literature review'
